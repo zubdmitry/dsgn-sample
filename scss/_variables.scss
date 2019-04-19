@@ -1,0 +1,32 @@
+// Colors 
+
+$bg-color: #e9eae2;
+$main-first-color: #333;
+$main-second-color: #fff;
+$main-third-color: #fd5000;
+$hover-color: #66cccc;
+$project-color: #ebb240;
+
+// Typography
+
+$font-color: #fff;
+$font-color-dark: #333;
+$font-family: Roboto-Light;
+$font-family-bold: Roboto-Bold;
+$font-family-medium: Roboto-Medium;
+$font-family-condensed: Roboto-Condensed;
+$font-family-condensed-light: Roboto-Condensed-Light;
+$font-size-normal: 14px;
+$font-size-h4: 1.4em;
+$headings-font-weight: 400;
+$headings-line-height: normal;
+$font-param: 10px;
+
+// other
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+);
