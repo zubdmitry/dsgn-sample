@@ -1,4 +1,4 @@
-@import url(/Users/dzub/Documents/dsgn-sample/fonts/fontello/css/zocial.css);
+@import url(../fonts/fontello/css/zocial.css);
 @font-face {
   font-family: 'Roboto-Thin';
   src: url("../fonts/roboto/Roboto-Thin.ttf") format("truetype");
@@ -450,6 +450,7 @@ body {
     font-size: 1em;
     margin-bottom: 1em; }
   .description .text-block {
+    text-transform: none;
     margin: 13% 1.5em 0 36%;
     line-height: 1.3em; }
 

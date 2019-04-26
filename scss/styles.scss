@@ -534,12 +534,13 @@ body {
 		margin-bottom: 1em;
 	}
 	.text-block {
+		text-transform: none;
 		margin: 13% 1.5em 0 36%;
 		line-height: 1.3em;
 	}
 }
 .designers {
-	flex-basis: 69%; // !!!todo
+	flex-basis: 69%;
 	display: flex;
 	margin: 4.3em 0 6.3em 0;
 
