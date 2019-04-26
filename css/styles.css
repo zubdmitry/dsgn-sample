@@ -85,17 +85,15 @@ body {
   max-height: 480px; }
 
 .logo-block {
-  flex: 0 0 16.66667%;
-  max-width: 16.66667%;
-  margin-left: 8.333%;
+  flex: 0 0 16%;
+  margin-left: 7%;
   padding: 3.5em 0 0 3em; }
   .logo-block img {
     width: 100%;
     max-width: 156px; }
 
 .photo-block {
-  flex: 0 0 41%;
-  max-width: 41%; }
+  flex: 0 0 42%; }
   .photo-block img {
     width: 100%;
     max-width: 535px;
@@ -107,10 +105,9 @@ body {
   background-color: #66cccc;
   font-weight: 200;
   text-transform: uppercase;
-  flex: 0 0 31%;
-  max-width: 31%; }
+  flex: 0 0 31%; }
   .menu-block .menu-button {
-    width: 11%;
+    width: 2.5em;
     margin: 2.5em auto 4em auto;
     padding: 2.15em 1.8em;
     font-size: 1.34em;
@@ -129,19 +126,17 @@ body {
     float: left;
     margin-top: 1.8em;
     line-height: 1.2em;
-    margin-left: 5.2em; }
+    margin-left: 13%; }
   .menu-block .number {
-    margin-top: 18.2em;
-    margin-left: 12em; }
+    margin: 18.2em 0 2em 29%; }
 
-.masonry-container {
-  display: flex;
-  text-transform: uppercase; }
-
+.masonry-container,
 .row-1,
 .row-2,
-.row-3 {
-  display: flex; }
+.row-3,
+.row {
+  display: flex;
+  text-transform: uppercase; }
 
 .part-1 {
   flex-basis: 69%; }
@@ -157,11 +152,8 @@ body {
   height: 480px;
   width: 45%; }
   .projects ul {
-    position: relative;
+    margin: 15em 0 0 14em;
     padding: 0;
-    margin-top: 0;
-    top: 35%;
-    left: 35%;
     font-size: .8em;
     line-height: 13px; }
   .projects a {
@@ -170,28 +162,19 @@ body {
       color: #333; }
   .projects h4 {
     color: #fff;
-    position: relative;
-    top: 33%;
     font-size: 3em;
-    left: 46%;
-    width: 45%; }
+    width: 45%;
+    margin: 1.1em 0 0 45%; }
 
 .fondue {
-  background-color: #fff;
+  background: url("../images/fondue-pr-2.png") #fff no-repeat;
+  background-position: center;
+  background-size: contain;
   height: 480px;
   width: 55%; }
-  .fondue img {
-    max-width: 397px;
-    position: relative;
-    left: 8.3em;
-    max-height: 100%; }
   .fondue .text-block {
-    position: relative;
-    width: 30%;
-    left: 18%;
-    top: 11%;
-    float: left;
-    clear: both; }
+    margin: 5.5em 0 0 5.5em;
+    width: 50%; }
     .fondue .text-block h4 {
       margin-bottom: .6em; }
     .fondue .text-block .param {
@@ -201,22 +184,22 @@ body {
         font-family: Roboto-Light;
         font-weight: bold; }
     .fondue .text-block .icon-arrow-right {
-      margin-top: 2em; }
-    .fondue .text-block .icon-heart-empty {
-      margin-top: 4.1em;
-      margin-left: 2.5em; }
+      margin-top: 3em; }
+    .fondue .text-block .like {
+      display: block;
+      margin: 7em 0 0 4.6em; }
 
 .louis-xx {
-  background: url("../images/louisbg-pr.png") no-repeat;
-  background-position: center;
-  background-size: cover;
+  background: url("../images/louis-pr.png") bottom no-repeat, url("../images/louis-pr-bg.png") center no-repeat;
+  background-size: contain, cover;
   width: 29%;
   height: 446px; }
   .louis-xx .text-block {
     color: #fff;
     position: relative;
     left: 10%;
-    top: 2%; }
+    top: 2%;
+    width: 85%; }
     .louis-xx .text-block h4 {
       margin-bottom: .6em; }
     .louis-xx .text-block .param {
@@ -230,28 +213,23 @@ body {
       margin-top: .7em; }
       .louis-xx .text-block .icon-arrow-right:hover {
         color: #ebb240; }
-    .louis-xx .text-block .icon-heart-empty {
-      display: block;
-      margin-left: 2.6em;
-      margin-top: .9em; }
-      .louis-xx .text-block .icon-heart-empty:before {
-        color: #fff; }
-      .louis-xx .text-block .icon-heart-empty:hover:before {
-        color: #66cccc; }
+    .louis-xx .text-block .icon-heart-empty:before {
+      color: #fff; }
+    .louis-xx .text-block .icon-heart-empty:hover:before {
+      color: #66cccc; }
     .louis-xx .text-block .like {
-      width: 65%; }
+      display: block;
+      margin: 1.5em 0 0 4.5em; }
 
 .project-block {
-  background: url(../images/395-396-p22-pr.png) no-repeat;
-  background-size: cover;
+  background: url(../images/395-396-p22-pr.png) #eaeaea bottom no-repeat;
+  background-size: contain;
   width: 71%; }
   .project-block .icones,
   .project-block .param {
     display: inline-block; }
-  .project-block .like {
-    margin-left: 1.3em; }
   .project-block .text-block {
-    padding-left: 49%; }
+    margin-left: 45%; }
     .project-block .text-block h4 {
       font-family: 'Roboto-Thin';
       margin-bottom: .6em;
@@ -262,84 +240,16 @@ body {
       font-family: 'Roboto-Thin';
       font-size: .75em;
       margin-top: 5.4em; }
-    .project-block .text-block .icon-heart-empty {
-      display: block;
-      margin-left: 3em;
-      margin-top: .6em; }
     .project-block .text-block .icon-arrow-right {
       margin-left: 1em; }
-
-.sesann {
-  width: 71%;
-  background-color: #fff;
-  height: 288px; }
-  .sesann img {
-    width: 64%;
-    max-width: 735px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    top: 2em;
-    left: 9em; }
-  .sesann .param,
-  .sesann .icones {
-    display: inline-block; }
-  .sesann .text-block {
-    margin-left: 10.5em;
-    margin-top: 0; }
-    .sesann .text-block h4 {
-      position: relative;
-      top: 9px;
-      margin-bottom: 5px; }
-    .sesann .text-block .param {
-      font-size: 10px; }
-    .sesann .text-block .icones {
-      margin-left: 2.5em;
-      position: relative;
-      top: -1.5em; }
-    .sesann .text-block .icon-heart-empty {
-      margin: 1em 0 0 1em; }
-    .sesann .text-block .like {
-      margin-left: 17em; }
-
-.alessi {
-  background: url("../images/alessi-pr.png") no-repeat;
-  background-size: cover;
-  width: 29%;
-  height: 288px; }
-  .alessi h4 {
-    margin-bottom: 0; }
-  .alessi .text-block {
-    position: relative;
-    top: 16%;
-    left: 53%;
-    width: 47%; }
-  .alessi .param {
-    font-size: 10px; }
-  .alessi .like {
-    display: block;
-    text-align: right;
-    margin-left: 2.6em;
-    width: 20%; }
-  .alessi .icon-arrow-right {
-    position: relative;
-    left: -2em;
-    font-size: 15px;
-    top: 1em; }
-  .alessi .icon-heart-empty {
-    display: block;
-    margin: 1.3em 0 0 1.1em;
-    width: 1px; }
+    .project-block .text-block .like {
+      display: block;
+      margin: 1.5em 0 0 5em; }
 
 .potter {
-  background-color: #dfe0d9;
-  height: 240px; }
-  .potter img {
-    float: right;
-    max-width: 292px;
-    max-height: 100%;
-    width: 66%;
-    clear: both; }
+  height: 240px;
+  background: url("../images/potter-pr-2.png") #dfe0d9 center no-repeat;
+  background-size: contain; }
   .potter .text-block {
     position: relative;
     left: 3em;
@@ -348,16 +258,19 @@ body {
     .potter .text-block .param {
       font-family: 'Roboto-Thin';
       font-size: .75em;
-      text-transform: none; }
+      text-transform: none;
+      margin-bottom: 14px;
+      width: 70%; }
     .potter .text-block h4 {
       margin-top: 0;
       margin-bottom: .6em; }
-    .potter .text-block .icon-heart-empty {
-      margin-left: 2.23em;
-      margin-top: .3em; }
+    .potter .text-block .like {
+      display: block;
+      margin: 1em 0 0 3.7em; }
 
 .tabano {
-  background-color: #f7f7f3;
+  background: url("../images/tabano-pr-2.png") #f7f7f3 center no-repeat;
+  background-size: contain;
   height: 448px; }
   .tabano img {
     margin: 2.2em 0 0 6.6em;
@@ -365,46 +278,43 @@ body {
   .tabano .param,
   .tabano .icones {
     display: inline-block; }
-  .tabano .text-block h4 {
-    margin: .4em 0 0 3em; }
-  .tabano .text-block .param {
-    font-size: 10px;
-    margin-left: 5.7em; }
-  .tabano .text-block .icones {
-    position: relative;
-    top: -1.4em;
-    left: .8em; }
-  .tabano .text-block .like {
-    margin-left: 14.7em; }
+  .tabano .text-block {
+    font-size: 12px;
+    display: inline-block;
+    margin: 27em 0 0 0; }
+    .tabano .text-block h4 {
+      margin: 0 0 0 3em; }
+    .tabano .text-block .param {
+      font-size: 10px;
+      margin-left: 5.7em; }
+    .tabano .text-block .icones {
+      position: relative;
+      top: -1.4em;
+      left: .8em; }
+    .tabano .text-block .icon-arrow-right {
+      position: relative;
+      top: -1em; }
 
 .fiji {
-  background-color: #fff;
+  background: url("../images/fiji-pr-2.png") #fff center no-repeat;
+  background-size: contain;
   height: 238px; }
-  .fiji img {
-    float: left;
-    clear: both;
-    position: relative;
-    top: 1em;
-    left: -1.6em;
-    max-width: 278px; }
   .fiji .text-block {
-    position: relative;
-    top: 3em;
-    left: -3em; }
+    display: inline-block;
+    margin: 3em 0 0 53%; }
     .fiji .text-block h4 {
       margin: 0; }
     .fiji .text-block .param {
       font-size: 10px;
       margin-bottom: 2em; }
-    .fiji .text-block .icon-heart-empty {
-      margin: .5em 0 0 2.7em; }
     .fiji .text-block .like {
-      position: relative;
-      left: -7px; }
+      display: block;
+      margin: 1em 0 0 4.5em; }
 
 .timeline {
   background-color: #ebb240;
-  height: 288px; }
+  height: 288px;
+  width: 31%; }
   .timeline h4 {
     margin: 0;
     font-size: 1.2em; }
@@ -422,6 +332,67 @@ body {
     left: 8.5em;
     width: 20%; }
 
+.sesann {
+  background: url("../images/sesann-pr.png") #fcfcfc center no-repeat;
+  background-size: contain;
+  width: 71%;
+  height: 288px; }
+  .sesann img {
+    width: 64%;
+    max-width: 735px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 2em;
+    left: 9em; }
+  .sesann .param,
+  .sesann .icones {
+    display: inline-block; }
+  .sesann .text-block {
+    margin: 13em 0 0 21%; }
+    .sesann .text-block h4 {
+      position: relative;
+      top: 9px;
+      margin-bottom: 5px; }
+    .sesann .text-block .param {
+      font-size: 10px; }
+    .sesann .text-block .icones {
+      margin-left: 2.5em;
+      position: relative;
+      top: -1.5em; }
+    .sesann .text-block .icon-arrow-right {
+      position: relative;
+      top: -1em; }
+    .sesann .text-block .like {
+      margin-left: 1.8em; }
+
+.alessi {
+  background: url("../images/alessi-pr.png") #cecece no-repeat;
+  background-size: contain;
+  width: 29%;
+  height: 288px; }
+  .alessi h4 {
+    margin-bottom: 0; }
+  .alessi .text-block {
+    margin: 5em 0 0 52%; }
+  .alessi .param {
+    font-size: 10px; }
+  .alessi .icon-arrow-right {
+    position: relative;
+    left: -2em;
+    font-size: 15px;
+    top: 1em; }
+  .alessi .like {
+    display: block;
+    margin: 2.2em 0 0 2em; }
+
+.half-1 {
+  display: flex;
+  width: 69%; }
+
+.timeline {
+  width: 31%; }
+
 .studio {
   background-color: #ff9966;
   flex-basis: 31%;
@@ -437,6 +408,7 @@ body {
   display: flex;
   font-family: Roboto-Condensed-Light; }
   .about-studio .content-1 {
+    text-transform: none;
     width: 45%; }
     .about-studio .content-1 span {
       font-family: Roboto-Condensed;
@@ -591,15 +563,12 @@ body {
     flex: 0 0 45%;
     font-family: Roboto-Condensed;
     font-size: 15px; }
-    .content-section .menu-block .address {
-      float: none;
-      margin: 44% 0 0 10em; }
-    .content-section .menu-block .number {
-      margin: 1em 0 0 10em; }
+    .content-section .menu-block .text-block {
+      margin: 9.5em 0 0 7.5em; }
   .content-section .logo-block {
     flex: 0 0 45%;
     max-width: 45%;
-    padding: 20% 0 0 1em; }
+    padding: 10.2em 0 0 1em; }
     .content-section .logo-block .social li {
       flex-basis: 11%; }
   .content-section .copyright {
@@ -626,19 +595,19 @@ body {
   .icon-arrow-left:hover {
     color: #ebb240; }
 
-.icon-heart-empty {
-  display: inline-block;
-  font-size: 1.7em;
-  color: #333; }
-  .icon-heart-empty:hover {
-    color: #66cccc; }
-
 .like {
-  text-align: center;
-  font-size: .7em;
-  margin-top: 1px;
-  margin-left: -1.7em;
-  color: #fd5000; }
+  display: inline-block;
+  margin-left: 5px;
+  width: 2.5em; }
+  .like p {
+    font-size: .8em;
+    color: #fd5000;
+    margin: 0; }
+  .like .icon-heart-empty {
+    font-size: 1.7em;
+    color: #333; }
+    .like .icon-heart-empty:hover {
+      color: #66cccc; }
 
 .param span {
   font-family: Roboto-Light;
@@ -655,3 +624,281 @@ body {
     color: #66cccc; }
     .social a:hover {
       color: #333; }
+
+@media (max-width: 1200px) {
+  .logo-block {
+    padding-left: 2em; }
+  .part-1 {
+    flex-basis: 55%; }
+  .part-2 {
+    flex-basis: 45%; }
+  .row-1,
+  .row-2 {
+    flex-direction: column; }
+  .projects,
+  .fondue,
+  .louis-xx,
+  .project-block {
+    width: 100%; }
+  .tabano {
+    height: 750px; }
+    .tabano .text-block {
+      font-size: 14px;
+      margin-top: 37em; }
+  .louis-xx {
+    height: 300px; }
+  .project-block {
+    height: 440px; }
+  .potter {
+    height: 480px; }
+    .potter .text-block {
+      top: 12em; }
+  .fiji {
+    height: 470px; }
+    .fiji .text-block {
+      margin-top: 10em; }
+  .row-3 {
+    flex-direction: column; }
+    .row-3 .half-1,
+    .row-3 .timeline {
+      width: 100%; }
+    .row-3 .timeline .text-block {
+      font-size: 16px;
+      margin: 0 auto;
+      left: 0;
+      width: 8%; }
+  .studio {
+    height: 250px; }
+    .studio h4 {
+      margin: 2.5em auto;
+      width: 15%; }
+  .about-studio {
+    flex-direction: column; }
+    .about-studio .content-1,
+    .about-studio .content-2 {
+      width: 100%; }
+    .about-studio .content-2 img {
+      display: block;
+      margin: 0 auto;
+      padding: 0; }
+    .about-studio .text-block-1,
+    .about-studio .text-block-2 {
+      margin: 3em auto;
+      padding: 0;
+      width: 85%; }
+    .about-studio .text-block-2 h4 {
+      text-align: center; }
+  .description {
+    width: 100%; }
+    .description .text-block {
+      margin: 2em auto;
+      width: 85%; }
+  .designers {
+    justify-content: space-around; }
+    .designers .two,
+    .designers .three {
+      margin-left: 0; }
+  .news-section {
+    height: 300px; }
+    .news-section h4 {
+      margin: 3em auto;
+      width: 20%; }
+  .post-section {
+    justify-content: space-around;
+    padding-bottom: 2em; }
+  .maps-section {
+    background-position: center;
+    height: 400px;
+    width: 100%; }
+  .content-section {
+    width: 100%; }
+    .content-section .menu-block {
+      font-size: 16px; }
+    .content-section .copyright {
+      margin: 1em auto;
+      text-align: center; }
+    .content-section .logo-block {
+      padding-left: 0; } }
+
+@media (max-width: 992px) {
+  .photo-block {
+    flex-basis: 36%; }
+    .photo-block img {
+      margin-top: 2em; }
+  .logo-block {
+    padding-left: 0; }
+  .tabano .text-block {
+    margin-left: 0;
+    width: 100%; }
+    .tabano .text-block h4 {
+      margin: 0 auto;
+      width: 25%; }
+    .tabano .text-block .param {
+      display: block;
+      margin: 1.5em auto;
+      width: 40%; }
+    .tabano .text-block .icones {
+      display: block;
+      margin: 2em auto;
+      width: 60%; }
+  .project-block .text-block h4 {
+    width: 100%; }
+  .project-block .text-block .like {
+    margin-top: .5em; }
+  .sesann {
+    width: 65%; }
+    .sesann .text-block {
+      margin-left: 15%; }
+  .alessi {
+    width: 35%; }
+  .designers {
+    flex-direction: column; }
+    .designers .one,
+    .designers .two,
+    .designers .three {
+      margin: 1em auto;
+      width: 31%; }
+  .post-section {
+    flex-direction: column; }
+    .post-section .post-1,
+    .post-section .post-2 {
+      margin: 0 auto;
+      width: 90%; } }
+
+@media (min-width: 769px) and (max-width: 900px) {
+  .potter .text-block {
+    width: 45%; }
+    .potter .text-block .like {
+      margin-top: 0; }
+  .potter .icones {
+    font-size: 12px; } }
+
+@media (max-width: 768px) {
+  .masonry-container {
+    flex-direction: column; }
+  .photo-block {
+    display: none; }
+  .logo-block {
+    margin-left: 9%;
+    margin-right: 9%;
+    flex-basis: 21%; }
+  .menu-block {
+    flex-basis: 50%; }
+  .projects {
+    font-size: 16px;
+    height: 350px; }
+    .projects ul {
+      margin: 5em 0 0 44%; }
+    .projects h4 {
+      margin-left: 33%; }
+  .fondue {
+    height: 300px; }
+    .fondue .text-block {
+      margin-top: 3.5em; }
+      .fondue .text-block .icon-arrow-right,
+      .fondue .text-block .like {
+        margin-top: 1em; }
+  .project-block .icones {
+    margin-top: 1em; }
+  .project-block .like {
+    margin-top: .5em; }
+  .potter {
+    background-size: auto;
+    height: 240px; }
+    .potter .text-block {
+      top: 2em; }
+  .tabano {
+    background-size: auto;
+    background-position: top;
+    height: 550px; }
+    .tabano .text-block {
+      margin-top: 25em; }
+  .fiji {
+    height: 275px; }
+    .fiji .text-block {
+      margin-top: 4em; }
+  .half-1 {
+    flex-direction: column; }
+  .sesann {
+    width: 100%; }
+  .alessi {
+    width: 100%; }
+  .designers .one,
+  .designers .two,
+  .designers .three {
+    width: 39%; } }
+
+@media (min-width: 576px) and (max-width: 768px) {
+  .tabano .text-block h4 {
+    width: 20%; }
+  .tabano .text-block .param {
+    width: 30%; }
+  .tabano .text-block .icones {
+    width: 35%; }
+  .alessi .text-block {
+    margin-left: 35%; }
+    .alessi .text-block .param,
+    .alessi .text-block .icones {
+      display: inline-block; }
+    .alessi .text-block .param {
+      position: relative;
+      top: -4em; }
+    .alessi .text-block .icones {
+      margin-left: 4em; }
+  .sesann .text-block {
+    margin-left: 21%; } }
+
+@media (max-width: 576px) {
+  .projects h4 {
+    margin-left: 27%; }
+  .fondue .text-block {
+    margin-left: 3.5em; }
+  .tabano .text-block .icones {
+    width: 45%; }
+  .sesann {
+    height: 340px;
+    background-position: top; }
+    .sesann .text-block {
+      margin-top: 11em; }
+      .sesann .text-block h4 {
+        margin: 0 auto;
+        width: 35%; }
+      .sesann .text-block .param,
+      .sesann .text-block .icones {
+        display: block;
+        margin: 2.5em auto;
+        width: 60%; }
+  .designers .one,
+  .designers .two,
+  .designers .three {
+    width: 46%; }
+  .content-section .menu-block .text-block {
+    margin-left: 2.5em; } }
+
+@media (max-width: 450px) {
+  .projects h4 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%; }
+  .fondue .text-block {
+    margin-left: .5em; }
+  .potter {
+    background-size: contain; }
+    .potter .text-block {
+      left: 1em; }
+      .potter .text-block .icones .like {
+        margin-top: .5em; }
+  .louis-xx .like {
+    margin-top: .5em;
+    font-size: 12px; }
+  .sesann .text-block {
+    margin-top: 8em; }
+    .sesann .text-block .like {
+      display: block;
+      margin-left: 4.8em; }
+    .sesann .text-block .icon-arrow-right {
+      top: 0; }
+  .designers .one,
+  .designers .two,
+  .designers .three {
+    width: 85%; } }

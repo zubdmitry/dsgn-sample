@@ -28,9 +28,8 @@ body {
 	max-height: 480px;
 }
 .logo-block {
-	flex: 0 0 16.66667%;
-    max-width: 16.66667%;
-	margin-left: 8.333%;
+	flex: 0 0 16%;
+	margin-left: 7%;
 	padding: 3.5em 0 0 3em;
 	img {
 		width: 100%;
@@ -38,8 +37,7 @@ body {
 	}
 }
 .photo-block {
-	flex: 0 0 41%;
-    max-width: 41%;
+	flex: 0 0 42%;
     
 	img {
 		width: 100%;
@@ -54,9 +52,8 @@ body {
 	font-weight: 200;
 	text-transform: uppercase; 
 	flex: 0 0 31%;
-    max-width: 31%;
     .menu-button {
-    	width: 11%;
+    	width: 2.5em;
     	margin: 2.5em auto 4em auto;
     	padding: 2.15em 1.8em;
     	font-size: 1.34em; 
@@ -81,28 +78,22 @@ body {
     	float: left;
     	margin-top: 1.8em;
 	    line-height: 1.2em;
-	    margin-left: 5.2em;
+	    margin-left: 13%;
     }
     .number {
-    	margin-top: 18.2em;
-   		margin-left: 12em;
+   		margin: 18.2em 0 2em 29%;
 	}
-    .line {
-		// TODO!!
-    }
 }
 
 // main page
 
-.masonry-container {
-	display: flex;
-	text-transform: uppercase;
-}
-
+.masonry-container,
 .row-1,
 .row-2,
-.row-3 {
+.row-3,
+.row {
 	display: flex;
+	text-transform: uppercase;
 }
 
 .part-1 {
@@ -124,11 +115,8 @@ body {
 	width: 45%;
 
 	ul {
-		position: relative;
+		margin: 15em 0 0 14em;
 		padding: 0;
-		margin-top: 0;
-		top: 35%;
-		left: 35%;
 		font-size: .8em;
 		line-height: 13px;
 	}
@@ -140,33 +128,22 @@ body {
 	}
 	h4 {
 		color: $font-color;
-		position: relative;
-	    top: 33%;
 	    font-size: 3em;
-	    left: 46%;
 	    width: 45%;
+	    margin: 1.1em 0 0 45%;
 	}
 }
 
 .fondue {
-	background-color: $main-second-color;
+	background: url('../images/fondue-pr-2.png') $main-second-color no-repeat;
+	background-position: center;
+	background-size: contain;
 	height: 480px;
 	width: 55%;
 
-	img {
-		max-width: 397px;
-		position: relative;
-		left: 8.3em;
-		max-height: 100%;
-	}
-
 	.text-block {
-		position: relative;
-		width: 30%;
-		left: 18%;
-		top: 11%;
-		float: left;
-		clear: both;
+		margin: 5.5em 0 0 5.5em;
+		width: 50%;
 
 		h4 {
 			margin-bottom: .6em;
@@ -181,19 +158,18 @@ body {
 			}
 		}
 		.icon-arrow-right {
-			margin-top: 2em;
+			margin-top: 3em;
 		}
-		.icon-heart-empty {
-			margin-top: 4.1em;
-			margin-left: 2.5em;
+		.like {
+			display: block;
+			margin: 7em 0 0 4.6em;
 		}
 	}
 }
 
 .louis-xx {
-	background: url('../images/louisbg-pr.png') no-repeat;
-	background-position: center;
-	background-size: cover;
+	background: url('../images/louis-pr.png') bottom no-repeat, url('../images/louis-pr-bg.png') center no-repeat;
+	background-size:  contain, cover;
 	width: 29%;
 	height: 446px;
 
@@ -202,6 +178,7 @@ body {
 		position: relative;
 		left: 10%;
 		top: 2%;
+		width: 85%;
 
 		h4 {
 			margin-bottom: .6em;
@@ -224,10 +201,6 @@ body {
 			}
 		}
 		.icon-heart-empty {
-			display: block;
-			margin-left: 2.6em;
-    		margin-top: .9em;
-
     		&:before {
     			color: $main-second-color;
     		}
@@ -236,14 +209,15 @@ body {
     		}
 		}
 		.like {
-			width: 65%;
+			display: block;
+			margin: 1.5em 0 0 4.5em;
 		}
 	}
 }
 
 .project-block {
-	background: url(../images/395-396-p22-pr.png) no-repeat;
-	background-size: cover;
+	background: url(../images/395-396-p22-pr.png) #eaeaea bottom no-repeat;
+	background-size: contain;
 	width: 71%;
 
 	.icones,
@@ -251,12 +225,8 @@ body {
 		display: inline-block;
 	}
 
-	.like {
-		margin-left: 1.3em;
-	}
-
 	.text-block {
-		padding-left: 49%;
+		margin-left: 45%;
 
 		h4 {
 			font-family: 'Roboto-Thin';
@@ -270,112 +240,22 @@ body {
 			font-size: .75em;
 			margin-top: 5.4em;
 		}
-		.icon-heart-empty {
-			display: block;
-			margin-left: 3em;
-   			margin-top: .6em;
-    	}
     	.icon-arrow-right {
     		margin-left: 1em;
     	}
-	}
-}
-
-.sesann {
-	width: 71%;
-	background-color: $main-second-color;
-	height: 288px;
-
-	img {
-		width: 64%;
-	    max-width: 735px;
-	    margin-left: auto;
-	    margin-right: auto;
-	    position: relative;
-	    top: 2em;
-	    left: 9em;
-	}
-	.param,
-	.icones {
-		display: inline-block;
-	}
-	.text-block {
-		margin-left: 10.5em;
-		margin-top: 0;
-
-		h4 {
-			position: relative;
-		    top: 9px;
-		    margin-bottom: 5px;
+    	.like {
+			display: block;
+			margin: 1.5em 0 0 5em;
 		}
-		.param {
-			font-size: $font-param;
-		}
-		.icones {
-			margin-left: 2.5em;
-		    position: relative;
-		    top: -1.5em;
-		}
-		.icon-heart-empty {
-			margin: 1em 0 0 1em;
-		}
-		.like {
-			margin-left: 17em;
-		}
-	}
-}
-
-.alessi {
-	background: url('../images/alessi-pr.png') no-repeat;
-	background-size: cover;
-	width: 29%;
-	height: 288px;
-
-	h4 {
-		margin-bottom: 0; 
-	}
-
-	.text-block {
-		position: relative;
-	    top: 16%;
-	    left: 53%;
-	    width: 47%;
-	}
-	.param {
-		font-size: $font-param;
-	}
-	.like {
-		display: block;
-		text-align: right;
-		margin-left: 2.6em;
-		width: 20%;
-	}
-	.icon-arrow-right {
-		position: relative;
-	    left: -2em;
-	    font-size: 15px;
-	    top: 1em;
-	}
-	.icon-heart-empty {
-		display: block;
-		margin: 1.3em 0 0 1.1em;
-		width: 1px;
 	}
 }
 
 // part - 2
 
 .potter {
-	background-color: #dfe0d9;
 	height: 240px;
-
-	img {
-		float: right;
-		max-width: 292px;
-		max-height: 100%;
-		width: 66%;
-		clear: both;
-	}
+	background: url('../images/potter-pr-2.png') #dfe0d9 center no-repeat;
+	background-size: contain;
 
 	.text-block {
 		position: relative;
@@ -387,20 +267,23 @@ body {
 			font-family: 'Roboto-Thin';
 			font-size: .75em;
 			text-transform: none;
+			margin-bottom: 14px;
+			width: 70%;
 		}
 		h4 {
 			margin-top: 0;
 			margin-bottom: .6em;
 		}
-		.icon-heart-empty {
-			margin-left: 2.23em;
-			margin-top: .3em;
+		.like {
+			display: block;
+			margin: 1em 0 0 3.7em;
 		}
 	}
 }
 
 .tabano {
-	background-color: #f7f7f3;
+	background: url('../images/tabano-pr-2.png') #f7f7f3 center no-repeat;
+	background-size: contain;
 	height: 448px;
 
 	img {
@@ -413,9 +296,12 @@ body {
 		display: inline-block;
 	}
 	.text-block {
+		font-size: 12px;
+		display: inline-block;
+		margin: 27em 0 0 0;
 
 		h4 {
-    		margin: .4em 0 0 3em;
+    		margin: 0 0 0 3em;
 		}
 		.param {
 			font-size: $font-param;
@@ -426,28 +312,21 @@ body {
 		    top: -1.4em;
 		    left: .8em;
 		}
-		.like {
-			margin-left: 14.7em;
+		.icon-arrow-right {
+			position: relative;
+			top: -1em;
 		}
 	}
 }
 
 .fiji {
-	background-color: $main-second-color;
+	background: url('../images/fiji-pr-2.png') $main-second-color center no-repeat;
+	background-size: contain;
 	height: 238px;
 
-	img {
-		float: left;
-		clear: both;
-		position: relative;
-	    top: 1em;
-	    left: -1.6em;
-	    max-width: 278px;
-	}
 	.text-block {
-		position: relative;
-		top: 3em;
-    	left: -3em;
+		display: inline-block;
+		margin: 3em 0 0 53%;
 
 		h4 {
 			margin: 0;
@@ -456,12 +335,9 @@ body {
 			font-size: $font-param;
 			margin-bottom: 2em;
 		}
-		.icon-heart-empty {
-			margin: .5em 0 0 2.7em;
-		}
 		.like {
-			position: relative;
-			left: -7px;
+			display: block;
+			margin: 1em 0 0 4.5em;
 		}
 	}
 }
@@ -469,6 +345,7 @@ body {
 .timeline {
 	background-color: $project-color;
 	height: 288px;
+	width: 31%;
 
 	h4 {
 		margin: 0;
@@ -495,6 +372,90 @@ body {
 
 }
 
+// row-3
+
+.sesann {
+	background: url('../images/sesann-pr.png') #fcfcfc center no-repeat;
+	background-size: contain;
+	width: 71%;
+	height: 288px;
+
+	img {
+		width: 64%;
+	    max-width: 735px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    position: relative;
+	    top: 2em;
+	    left: 9em;
+	}
+	.param,
+	.icones {
+		display: inline-block;
+	}
+	.text-block {
+		margin: 13em 0 0 21%;
+
+		h4 {
+			position: relative;
+		    top: 9px;
+		    margin-bottom: 5px;
+		}
+		.param {
+			font-size: $font-param;
+		}
+		.icones {
+			margin-left: 2.5em;
+		    position: relative;
+		    top: -1.5em;
+		}
+		.icon-arrow-right {
+			position: relative;
+			top: -1em;
+		}
+		.like {
+			margin-left: 1.8em;
+		}
+	}
+}
+
+.alessi {
+	background: url('../images/alessi-pr.png') #cecece no-repeat;
+	background-size: contain;
+	width: 29%;
+	height: 288px;
+
+	h4 {
+		margin-bottom: 0; 
+	}
+
+	.text-block {
+		margin: 5em 0 0 52%;
+	}
+	.param {
+		font-size: $font-param;
+	}
+	.icon-arrow-right {
+		position: relative;
+	    left: -2em;
+	    font-size: 15px;
+	    top: 1em;
+	}
+	.like {
+		display: block;
+		margin: 2.2em 0 0 2em;
+	}
+}
+
+.half-1 {
+	display: flex;
+	width: 69%;
+}
+
+.timeline {
+	width: 31%;
+}
+
 // about-section 
 
 .studio {
@@ -515,6 +476,7 @@ body {
 	font-family: $font-family-condensed-light;
 
 	.content-1 {
+		text-transform: none;
 		width: 45%;
 		span {
 			font-family: $font-family-condensed;
@@ -720,19 +682,14 @@ body {
 		font-family: $font-family-condensed;
 		font-size: 15px;
 
-		.address {
-			float: none;
-			margin: 44% 0 0 10em;
-
-		}
-		.number {
-			margin: 1em 0 0 10em;
+		.text-block {
+			margin: 9.5em 0 0 7.5em;
 		}
 	}
 	.logo-block {
 		flex: 0 0 45%;
 		max-width: 45%;
-		padding: 20% 0 0 1em;
+		padding: 10.2em 0 0 1em;
 
 		.social {
 			li {
@@ -771,21 +728,24 @@ body {
 		color: $project-color;
 	}
 }
-.icon-heart-empty {
-	display: inline-block;
-	font-size: 1.7em;
-    color: $main-first-color;
-
-    &:hover {
-    	color: $hover-color;
-    }
-}
 .like {
-	text-align: center;
-	font-size: .7em;
-	margin-top: 1px;
-	margin-left: -1.7em;
-	color: $main-third-color;
+	display: inline-block;
+	margin-left: 5px;
+	width: 2.5em;
+
+	p {
+		font-size: .8em;
+		color: $main-third-color;
+		margin: 0;
+	}
+	.icon-heart-empty {
+		font-size: 1.7em;
+    	color: $main-first-color;
+
+    	&:hover {
+    		color: $hover-color;
+    	}
+	}
 }
 .param {
 	span {
@@ -809,8 +769,473 @@ body {
 	}
 }
 
+// responsive 
 
+@media (max-width: map-get($breakpoints, xl)) {
+	.logo-block {
+		padding-left: 2em;
+	}
+	.part-1 {
+		flex-basis: 55%;
+	}
+	.part-2 {
+		flex-basis: 45%;
+	}
+	.row-1,
+	.row-2 {
+		flex-direction: column;
+	}
+	.projects,
+	.fondue,
+	.louis-xx,
+	.project-block {
+		width: 100%;
+	}
+	.tabano {
+		height: 750px;
 
+		.text-block {
+			font-size: 14px;
+			margin-top: 37em;
+		}
+	}
+	.louis-xx {
+		height: 300px;
+	}
+	.project-block {
+		height: 440px;
+	}
+	.potter {
+		height: 480px;
+		.text-block {
+			top: 12em;
+		}
+	}
+	.fiji {
+		height: 470px;
+		.text-block {
+			margin-top: 10em;
+		}
+	}
+	.row-3 {
+		flex-direction: column;
+
+		.half-1,
+		.timeline {
+			width: 100%;
+		}
+		.timeline {
+			.text-block {
+				font-size: 16px;
+				margin: 0 auto;
+				left: 0;
+				width: 8%;
+			}
+		}
+	}
+
+	// about section
+
+	.studio {
+		height: 250px;
+		h4 {
+			margin: 2.5em auto;
+			width: 15%;
+		}
+	}
+	.about-studio {
+		flex-direction: column;
+		.content-1,
+		.content-2 {
+			width: 100%;
+		}
+		.content-2 {
+			img {
+				display: block;
+				margin: 0 auto;
+				padding: 0;
+			}
+		}
+		.text-block-1,
+		.text-block-2 {
+			margin: 3em auto;
+			padding: 0;
+			width: 85%;
+		}
+		.text-block-2 {
+			h4 {
+				text-align: center;
+			}
+		}
+	}
+	.description {
+		width: 100%;
+		.text-block {
+			margin: 2em auto;
+			width: 85%;
+		}
+	}
+	.designers {
+		justify-content: space-around;
+
+		.two,
+		.three {
+			margin-left: 0;
+		}
+	}
+	.news-section {
+		height: 300px;
+		h4 {
+			margin: 3em auto;
+			width: 20%;
+		}
+	}
+	.post-section {
+		justify-content: space-around;
+		padding-bottom: 2em;
+	}
+
+	// footer 
+
+	.maps-section {
+		background-position: center;
+		height: 400px;
+		width: 100%;
+	}
+	.content-section {
+		width: 100%;
+
+		.menu-block {
+			font-size: 16px;
+		}
+		.copyright {
+			margin: 1em auto;
+			text-align: center;
+		}
+		.logo-block {
+			padding-left: 0;
+		}
+	}
+
+}
+@media (max-width: map-get($breakpoints, lg)) {
+	.photo-block {
+		flex-basis: 36%;
+
+		img {
+			margin-top: 2em;
+		}
+	}
+	.logo-block {
+		padding-left: 0;
+	}
+	.tabano {
+		.text-block {
+			margin-left: 0;
+			width: 100%;
+			h4 {
+				margin: 0 auto;
+				width: 25%;
+			}
+			.param {
+				display: block;
+				margin: 1.5em auto;
+				width: 40%;
+			}
+			.icones {
+				display: block;
+				margin: 2em auto;
+				width: 60%;
+			}
+		}
+	}
+	.project-block {
+		.text-block {
+			h4 {
+				width: 100%;
+			}
+			.like {
+				margin-top: .5em;
+			}
+		}
+	}
+	.sesann {
+		width: 65%;
+		.text-block {
+			margin-left: 15%;
+		}
+	}
+	.alessi {
+		width: 35%;
+	}
+
+	// about section 
+
+	.designers {
+		flex-direction: column;
+		.one,
+		.two,
+		.three {
+			margin: 1em auto;
+			width: 31%;
+		}
+	}
+	.post-section {
+		flex-direction: column;
+		.post-1,
+		.post-2 {
+			margin: 0 auto;
+			width: 90%;
+		}
+	}
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+	.potter {
+		.text-block {
+			width: 45%;
+			.like {
+				margin-top: 0;
+			}
+		}
+		.icones {
+			font-size: 12px;
+		}
+	}
+}
+
+@media (max-width: map-get($breakpoints, md)) {
+	.masonry-container {
+		flex-direction: column;
+	}
+	.photo-block {
+		display: none;
+	}
+	.logo-block {
+		margin-left: 9%;
+		margin-right: 9%;
+		flex-basis: 21%;
+	}
+	.menu-block {
+		flex-basis: 50%;
+	}
+	.projects {
+		font-size: 16px;
+		height: 350px;
+
+		ul {
+			margin: 5em 0 0 44%;
+		}
+		h4 {
+			margin-left: 33%;
+		}
+	}
+	.fondue {
+		height: 300px;
+		.text-block {
+			margin-top: 3.5em;
+			.icon-arrow-right,
+			.like {
+				margin-top: 1em;
+			}
+		}
+	}
+	.project-block {
+		.icones {
+			margin-top: 1em;
+		}
+		.like {
+			margin-top: .5em;
+		} 
+	}
+	.potter {
+		background-size: auto;
+		height: 240px;
+		.text-block {
+			top: 2em;
+		}
+	}
+	.tabano {
+		background-size: auto;
+		background-position: top;
+		height: 550px;
+		.text-block {
+			margin-top: 25em;
+		}
+	}
+	.fiji {
+		height: 275px;
+		.text-block {
+			margin-top: 4em;
+		}
+	}
+	.half-1 {
+		flex-direction: column;
+	}
+	.sesann {
+		width: 100%;
+	}
+	.alessi {
+		width: 100%;
+	}
+
+	//about section 
+
+	.designers {
+		.one,
+		.two,
+		.three {
+			width: 39%;
+		}
+	}
+}
+
+@media (min-width: map-get($breakpoints, sm)) and (max-width: map-get($breakpoints, md)) {
+	.tabano {
+		.text-block {
+			h4 {
+				width: 20%;
+			}
+			.param {
+				width: 30%;
+			}
+			.icones {
+				width: 35%;
+			}
+		}
+	}
+	.alessi {
+		.text-block {
+			margin-left: 35%;
+			.param,
+			.icones {
+				display: inline-block;
+			}
+			.param {
+				position: relative;
+				top: -4em;
+			}
+			.icones {
+				margin-left: 4em;
+			}
+		}
+	}
+	.sesann {
+		.text-block {
+			margin-left: 21%;
+		}
+	}
+}
+
+@media (max-width: map-get($breakpoints, sm)) {
+	.projects {
+		h4 {
+			margin-left: 27%;
+		}
+	}
+	.fondue {
+		.text-block {
+			margin-left: 3.5em;
+		}
+	}
+	.tabano {
+		.text-block {
+			.icones {
+				width: 45%;
+			}
+		}
+	}
+	.sesann {
+		height: 340px;
+		background-position: top;
+		.text-block {
+			margin-top: 11em;
+			h4 {
+				margin: 0 auto; 
+				width: 35%;
+			}
+			.param,
+			.icones {
+				display: block;
+				margin: 2.5em auto;
+				width: 60%;
+			}
+		}
+	}
+
+	// about section 
+	
+	.designers {
+		.one,
+		.two,
+		.three {
+			width: 46%;
+		}
+	}
+
+	// footer 
+
+	.content-section {
+		.menu-block {
+			.text-block {
+				margin-left: 2.5em;
+			}
+		}
+	}
+}
+@media (max-width: map-get($breakpoints, xs)) {
+	.projects {
+		h4 {
+			margin-left: auto;
+			margin-right: auto;
+			width: 60%;
+		}
+	}
+	.fondue {
+		.text-block {
+			margin-left: .5em;
+		}
+	}
+	.potter {
+		background-size: contain;
+		.text-block {
+			left: 1em;
+			.icones {
+				.like {
+					margin-top: .5em;
+				}
+			}
+		}	
+	}
+	.louis-xx {
+		.like {
+			margin-top: .5em;
+			font-size: 12px;
+		}
+	}
+	.sesann {
+		.text-block {
+			margin-top: 8em;
+			.like {
+				display: block;
+				margin-left: 4.8em;
+			}
+			.icon-arrow-right {
+				top: 0;
+			}
+		}
+	}
+
+// about section 
+
+	.designers {
+		.one,
+		.two,
+		.three {
+			width: 85%;
+		}
+	}
+}
 
 
 
