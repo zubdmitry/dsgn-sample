@@ -1,31 +1,43 @@
-var a = $('.wrapper').height(); //получаем высоту прямоугольника
-var b = $('.wrapper').width(); // ...и его ширину
+function menuBlock() {
+  h = $(".menu-block").height();
+  w = $(".menu-block").outerWidth();
+  deg = Math.atan(h / w);
+  $(".menu-block").css("background", "linear-gradient(" + -deg + "rad, #66cccc calc(50% - 1px), white 50%,  #66cccc calc(50% + 1px), #66cccc 100% )");
+}
+function projectsBlock() {
+  h = $(".projects").height();
+  w = $(".projects").outerWidth();
+  deg = Math.atan(h / w);
+  $(".projects").css("background", "linear-gradient(" + -deg + "rad, #ebb240 calc(50% - 1px), white 50%,  #ebb240 calc(50% + 1px), #ebb240 100% )");
+}
+function studioBlock() {
+  h = $(".studio").height();
+  w = $(".studio").outerWidth();
+  deg = Math.atan(h / w);
+  $(".studio").css("background", "linear-gradient(" + -deg + "rad, #ff9966 calc(50% - 1px), white 50%,  #ff9966 calc(50% + 1px), #ff9966 100% )");
+}
+function timelineBlock() {
+  h = $(".timeline").height();
+  w = $(".timeline").outerWidth();
+  deg = Math.atan(h / w);
+  $(".timeline").css("background", "linear-gradient(" + -deg + "rad, #ebb240 calc(50% - 1px), white 50%,  #ebb240 calc(50% + 1px), #ebb240 100% )");
+}
+function newsBlock() {
+  h = $(".news-section").height();
+  w = $(".news-section").outerWidth();
+  deg = Math.atan(h / w);
+  $(".news-section").css("background", "linear-gradient(" + -deg + "rad, #ccffcc calc(50% - 1px), white 50%,  #ccffcc calc(50% + 1px), #ccffcc 100% )");
+}
 
-var d = Math.sqrt(a*a+b*b); //высчитываем диагональ
-
-var sin = a/d; //...синус угла между диагональню и стороной
-
-var deg = Math.asin(sin) * (180/Math.PI); //...угол
-
- $('.inner').css({
-    'width': d, //задаём длину диагонали
-    'transform': 'rotate('+deg+'deg)' //...и угол наклона при первой загрузке страницы
-  });
-
-$(window).resize(function() { //меняем параметры при изменении размеров экрана
-
-  b = $('.wrapper').width();
-
-  d = Math.sqrt(a*a+b*b);
-
-  sin = a/d;
-
-  deg = Math.asin(sin) * (180/Math.PI);
-
-
-  $('.inner').css({
-    'width': d,
-    'transform': 'rotate('+deg+'deg)'
-  });
-
+menuBlock();
+projectsBlock();
+studioBlock();
+timelineBlock();
+newsBlock();
+$(window).resize(function() {
+  menuBlock();
+  projectsBlock();
+  studioBlock();
+  timelineBlock();
+  newsBlock();
 });

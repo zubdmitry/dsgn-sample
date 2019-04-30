@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'zocial';
-  src: url('../font/zocial.eot?1654619');
-  src: url('../font/zocial.eot?1654619#iefix') format('embedded-opentype'),
-       url('../font/zocial.woff2?1654619') format('woff2'),
-       url('../font/zocial.woff?1654619') format('woff'),
-       url('../font/zocial.ttf?1654619') format('truetype'),
-       url('../font/zocial.svg?1654619#zocial') format('svg');
+  src: url('../font/zocial.eot?74408033');
+  src: url('../font/zocial.eot?74408033#iefix') format('embedded-opentype'),
+       url('../font/zocial.woff2?74408033') format('woff2'),
+       url('../font/zocial.woff?74408033') format('woff'),
+       url('../font/zocial.ttf?74408033') format('truetype'),
+       url('../font/zocial.svg?74408033#zocial') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -15,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'zocial';
-    src: url('../font/zocial.svg?1654619#zocial') format('svg');
+    src: url('../font/zocial.svg?74408033#zocial') format('svg');
   }
 }
 */
@@ -63,3 +63,4 @@
 .icon-menu-button:before { content: '\e830'; } /* '' */
 .icon-arrow-right:before { content: '\e831'; } /* '' */
 .icon-arrow-left:before { content: '\e832'; } /* '' */
+.icon-close:before { content: '\e833'; } /* '' */

@@ -79,6 +79,20 @@
       "src": "fontawesome"
     },
     {
+      "uid": "01e144aebf121077a1c2b55ec62aa32b",
+      "css": "close",
+      "code": 59443,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M22.6 72.4L91.2 12.8 886.5 927.6 817.8 987.2ZM886.5 72.4L817.8 12.8 22.6 927.6 91.2 987.2Z",
+        "width": 909
+      },
+      "search": [
+        "close"
+      ]
+    },
+    {
       "uid": "9101cd0ea5cbf1428cf97acc62930eea",
       "css": "store-new-badges",
       "code": 59424,

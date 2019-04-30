@@ -112,14 +112,32 @@ body {
     padding: 2.15em 1.8em;
     font-size: 1.34em;
     border: 2.5px #fff solid; }
+    .menu-block .menu-button a {
+      color: #fff; }
     .menu-block .menu-button:hover {
       border-color: #333;
       color: #333;
-      cursor: pointer; }
+      visibility: hidden; }
       .menu-block .menu-button:hover a {
         color: #333; }
-    .menu-block .menu-button a {
-      color: #fff; }
+    .menu-block .menu-button:hover .sub-menu {
+      visibility: visible;
+      transform: translateX(-88%);
+      transition-duration: 0.5s;
+      width: 50%; }
+      .menu-block .menu-button:hover .sub-menu a {
+        color: #fff;
+        display: block;
+        padding-top: 1.1em;
+        font-family: Roboto-Light;
+        font-size: .8em; }
+        .menu-block .menu-button:hover .sub-menu a:hover {
+          color: #333; }
+      .menu-block .menu-button:hover .sub-menu .icon-close {
+        font-size: 2em;
+        padding: 0; }
+  .menu-block .inner {
+    border-top: 1px black solid; }
   .menu-block p {
     font-size: .78em; }
   .menu-block .address {
@@ -129,6 +147,23 @@ body {
     margin-left: 13%; }
   .menu-block .number {
     margin: 18.2em 0 2em 29%; }
+
+.sub-menu {
+  background: #ebb240;
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+  visibility: hidden;
+  position: absolute;
+  height: 112px;
+  top: 1.5em;
+  width: 1%; }
+  .sub-menu li {
+    text-align: center;
+    flex-basis: 14%;
+    margin: 1.65em .8%; }
+    .sub-menu li:hover {
+      cursor: pointer; }
 
 .masonry-container,
 .row-1,
@@ -557,14 +592,14 @@ body {
 
 .content-section {
   width: 50%; }
-  .content-section .menu-block {
+  .content-section .menu-text {
     background-color: inherit;
     color: #333;
     max-width: 45%;
     flex: 0 0 45%;
     font-family: Roboto-Condensed;
     font-size: 15px; }
-    .content-section .menu-block .text-block {
+    .content-section .menu-text .text-block {
       margin: 9.5em 0 0 7.5em; }
   .content-section .logo-block {
     flex: 0 0 45%;
@@ -629,6 +664,14 @@ body {
 @media (max-width: 1200px) {
   .logo-block {
     padding-left: 2em; }
+  .menu-block .menu-button {
+    padding: 1.5em 1em; }
+  .menu-block .address {
+    margin-left: 50%; }
+  .menu-block .sub-menu {
+    height: 88px; }
+    .menu-block .sub-menu li {
+      margin: 1em auto; }
   .part-1 {
     flex-basis: 55%; }
   .part-2 {
@@ -728,6 +771,12 @@ body {
       margin-top: 2em; }
   .logo-block {
     padding-left: 0; }
+  .menu-block .menu-button {
+    font-size: 1.1em; }
+  .menu-block .address {
+    margin-top: 3.8em; }
+  .menu-block .sub-menu {
+    height: 74px; }
   .tabano .text-block {
     margin-left: 0;
     width: 100%; }
@@ -775,6 +824,9 @@ body {
     font-size: 12px; } }
 
 @media (max-width: 768px) {
+  .menu-block .menu-button:hover .sub-menu {
+    transform: translateX(-72%);
+    width: 100%; }
   .masonry-container {
     flex-direction: column; }
   .photo-block {
@@ -791,7 +843,7 @@ body {
     .projects ul {
       margin: 5em 0 0 44%; }
     .projects h4 {
-      margin-left: 33%; }
+      margin: 2.1em 0 0 33%; }
   .fondue {
     height: 300px; }
     .fondue .text-block {
